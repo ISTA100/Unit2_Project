@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    /* color: #fff; */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    text-align: left;
+}
+
+.container {
+    background-color: rgba(115, 116, 117, 0.9); /* Set background color of container */
+    padding: 0; /* Add padding to create space between content and side margins */
+	max-width: 70%;
+	margin: 0 auto;
+}
+
+.side-margins {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place behind other content */
+	
+    background-size: cover; /* Cover the entire side margin */
+    background-position: center; /* Center the background image */
+	background-repeat: repeat-y;
+	animation: bg-animation 10s linear infinite; /* Animation to smoothly transition between images */
+
+}
+
+.side-margins {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place behind other content */
+    background-image: 
+        url('ML.jpg'); 
+}
+
+header, footer {
+    background-color: #211a47;
+    color: #fff;
+    padding: 20px;
+    text-align: center; /* Align header and footer text to the center */
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline; /* Underline the link on hover */
+}
+
+section {
+    padding: 20px;
+	text-align: left;
+}
+
+section h2 {
+    text-align: center; /* Align header text to the center */
+}
+
+ul {
+    text-align: left; /* Align bulleted list items to the left */
+    margin-left: 0; /* Reset default margin for <ul> */
+    padding-left: 100px; /* Add left padding to match paragraph margin */
+}
+
+ol {
+    text-align: left; /* Align bulleted list items to the left */
+    margin-left: 0; /* Reset default margin for <ul> */
+    padding-left: 100px; /* Add left padding to match paragraph margin */
+}
+
+p {
+    max-width: 80%; /* Limit paragraph width to 70% of the screen width */
+    margin: 0 auto; /* Center paragraphs horizontally */
+}
+
+section#future-career-definition img {
+    display: block; /* Make the image a block element to adjust its margins */
+    margin: 20px auto; /* Center the image horizontally and add space around it */
+    max-width: 100%; /* Ensure the image does not exceed the width of its container */
+    height: auto; /* Maintain the aspect ratio of the image */
+    width: 45%;
+}
+
+section#degree-contribution img {
+    display: block; /* Make the image a block element to adjust its margins */
+    margin: 20px auto; /* Center the image horizontally and add space around it */
+    max-width: 100%; /* Ensure the image does not exceed the width of its container */
+    height: auto; /* Maintain the aspect ratio of the image */
+    width: 50%; /* Set the width of the image to 50% of its container */
+}
+
+footer {
+    position: relative;
+    z-index: 1; /* Ensure footer is above side margins */
+}
